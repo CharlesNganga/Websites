@@ -1,0 +1,281 @@
+*:not(.log){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(Images/purple_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* HEADER */
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    width: auto;
+    /* color: #96BF48; */
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #3a3a3a;
+    display: inline-block;
+}
+
+ul li{
+    padding: 0 20px;    
+}
+
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #c4c4f7;
+    transition: all .5s;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+.srch{
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #133B4F;
+    font-size: 15px;
+    /* border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px; */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search-btn{
+    width: 100px;
+    height: 40px;
+    background: #133B4F;
+    color: #fff;
+    border: 2px solid #133B4F;
+    /* border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px; */
+    border-radius: 5px;
+
+}
+
+.search-btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+
+/* CONTENT LEFT */
+
+.content-left{
+    width: 60%;
+    padding-left: 40px;
+}
+
+.content-left h1{
+    font-size: 54px;
+    color: #133B4F;
+    text-transform: uppercase;
+}
+
+.content-left h2{
+    font-size: 25px;
+    color: #fca70c;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.content-left p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 31.5px;
+    margin: 30px 0;
+}
+
+.content-left .cta{
+    padding: 15px 20px;
+    background-color: #c4c4f7;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.content-left button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* CONTENT RIGHT */
+
+.content-right{
+    margin: 0 auto;
+}
+
+.login-card{
+    width: 305px;
+    height: 450px;
+    background: #fff;
+    box-shadow: 1px 2px 8px rgba(0, 0 ,0, 0.65);
+    border-radius: 8px;
+}
+
+.login-card a{
+    text-decoration: none;
+}
+
+.card-content{
+    padding: 15px 50px;
+}
+
+.card-title{
+    font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.underline-title{
+    height: 3px;
+    width: 89px;
+    background: linear-gradient(to right, #a6f77b, #2ec06f);
+    margin: -1.1rem auto 0 auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: "Raleway Thin", sans-serif;
+    font-size: 11pt;
+}
+
+.form-input{
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+    padding-top: 14px;
+
+}
+
+.input-border{
+    background: linear-gradient(to right, #a6f77b, #2ec06f);
+    height: 2px;
+    width: 100%;
+
+
+}
+
+.forgot-pass{
+    color: #2bdb6e;
+    font-family: "Raleway Thin", sans-serif;
+    text-align: right;
+    font-size: 10pt;
+    margin-top: 3px;   
+}
+
+#submit-btn{
+    background: linear-gradient(to right, #a6f77b, #2bdb6e);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px #24c64f;
+    cursor: pointer;
+    color: #fff; 
+    font-family: "Raleway Thin", sans-serif;
+    height: 42.3px;
+    width: 153px;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: 0.25s;
+}
+
+#submit-btn:hover{
+    box-shadow: 0px 1px 18px #24c64f;
+}
+
+.signup{
+    color: #2bdb6e;
+    font-family: "Raleway Thin", sans-serif;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.signup a{
+    color: #166338;
+    font-weight: 530;
+    transition: 0.25s ease-in-out;
+}
+
+.signup a:hover{
+    color: #0e1310;
+    font-weight: 600;
+}
+
+.liw{
+    font-size: 10pt;
+}
+
+.icon{
+    text-align: center;
+    font-family: "Raleway Thin", sans-serif;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.icon ion-icon{
+    color: #2ec06f;
+    font-size: 25px;
+    padding-left: 12px;
+    transition: 0.5s ease;
+}
+
+.icon ion-icon:hover{
+    color: #24c64f;
+}
+
+
+
+
+
